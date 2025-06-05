@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import {
   Alert,
   Box,
@@ -36,7 +38,7 @@ const Signin = () => {
       );
 
       navigate("/dashboard");
-    } catch (err: any) {
+    } catch (err:any) {
       setError(err.response?.data?.message || "Signin failed");
     }
   };
